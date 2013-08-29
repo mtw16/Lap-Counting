@@ -1,0 +1,115 @@
+﻿.initialSetup-box {
+    height: auto;
+    width: 900px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+        border: 1px #888888 solid;
+
+-moz-box-shadow: 6px 2px 12px 3px #b3b2b2;
+-webkit-box-shadow: 6px 2px 12px 3px #b3b2b2;
+box-shadow: 6px 2px 12px 3px #b3b2b2;
+}
+
+
+.firstPage {
+    height:460px ;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border: 1px #888888 solid;
+
+-moz-box-shadow: 6px 2px 12px 3px #b3b2b2;
+-webkit-box-shadow: 6px 2px 12px 3px #b3b2b2;
+box-shadow: 6px 2px 12px 3px #b3b2b2;
+}
+.numRunning {
+    width: 85%;
+    max-width:800px;
+    float:left;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-bottom:auto
+}
+.numLaps-box {
+    height: 40px;
+    width: 200px;
+    float:left;
+
+    margin-right: 10px;
+    margin: auto;
+    padding-left: 10px;
+}
+.numAth-box {
+    width: 200px;
+    height: 40px;
+    float:left;
+
+    margin-right: auto;
+    margin: auto;
+   
+}
+.ReOrder-box {
+    height: auto;
+    width: auto;
+    float:right;
+
+    margin-right: auto;
+}
+.mainTable-box {
+    height: 350px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y:scroll; 
+    border: 1px #888888 solid;
+
+    -moz-box-shadow: 2px 2px 12px 3px #b3b2b2;
+    -webkit-box-shadow: 2px 2px 12px 3px #b3b2b2;
+    box-shadow: 2px 2px 12px 3px #b3b2b2;   
+}
+
+.bbutton-box {
+    width:100px; 
+    height:200px;
+    margin-bottom:20px;
+    margin-top:3px;
+    margin-left:3px;
+    margin-right:3px;
+    border: 1px #888888 solid;
+
+    -moz-box-shadow: 2px 2px 12px 3px #b3b2b2;
+    -webkit-box-shadow: 2px 2px 12px 3px #b3b2b2;
+    box-shadow: 2px 2px 12px 3px #b3b2b2;  
+}
+.buttons-box {
+    border-collapse:collapse;
+    max-width:300px; 
+    margin: 0;
+    padding: 0;
+    display:table-row;
+    
+}
+.stopWatch-box {
+    float:left;
+    padding-left: 10px;
+    padding-top:8px;
+}
+.dnf-box{
+    float:left;
+    padding: 10px;
+}
+.remaining-box {
+    float:right;
+    padding: 10px;
+}
+
+
+@-webkit-keyframes greenPulse {
+from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+

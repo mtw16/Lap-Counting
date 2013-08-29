@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Home Page - My ASP.NET MVC Application</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="HandheldFriendly" content="true">
+<!-- tell iOS that this app can work in full screen mode. No need for navbars -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+        <link href="css/site.css" rel="stylesheet"/>
+
+        <script src="js/modernizr-2.6.2.js"></script>
+
+    </head>
+    <body>
+        <header>
+        </header>
+        <div id="body">
+            
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Home Page.</h1>
+                <h2>Modify this template to jump-start your ASP.NET MVC application.</h2>
+            </hgroup>
+        </div>
+    </section>
+
+            <section class="content-wrapper main-content clear-fix">
+                
+
+
+<center>
+<div class="initialSetup-box">
+    <button style="width:900px; height:200px;" onclick="goToSetup();">Setup</button>
+</div>
+</center>
+
+<div class="secondPage" hidden >
+    <div class="secondPage-menu">
+                <ul id="tree"><li><span class="k-minus k-in">Race Options</span><ul>
+        <li><a href="#" onclick="showConfigurationBox();"> Configuration </a><br /></li>
+        <li><a href="#" onclick="showLaptimesBox();"> Laptimes Box</a><br /></li>
+        <li><a href="#" onclick="showArrayBox();"> Array Box</a><br /></li>
+        <li><a href="#" onclick="showTimesConfigBox();"> Seconds Box</a><br /></li>
+        </ul></li> </ul>
+        
+            <div class="return-to-main-box" style=" margin-left:10px;">
+            <button style="width:100px; height: 50px;" onclick="goRace(); " id="returnbutton" class="returnbutton">Go Race!</button></div>       
+        </div>
+    <div class="topNav"><span id="breadcrumb">Setup Screen</span></div>
+    <div class="configuration-box" hidden>        
+    <div class="numRunning">
+    
+    <div class="configuration-save-box">
+    <button onclick="submitConfig();">Create Runners</button>
+    </div>
+
+    <div class="configuration-options-box" >
+    <label for="NumberOfRunners">Number of Competitors</label>
+    <input type="text" id="NumberOfRunners" />
+    </div>
+
+    <div class="configuration-options-box" >
+    <label for="NumberOfLaps">Number of Laps</label>
+    <input type="text" id="NumberOfLaps"/>
+    </div>
+
+    <div class="configuration-options-box" >
+    <label for="NumberOfRunners">Competitors not in Race</label>
+    <input type="text" id="" />
+    </div>
+
+    <div class="configuration-options-box" >
+    <label for="NumberOfRunners">Minimum Lap time</label>
+    <input id="minimumTime" name="minTime" value="00:00:00">
+</div>
+    </div>
+</div>
+    <div class="laptimes-box" hidden>          
+        <div class="ReOrderSetup" style="float:right; margin-left:50px;">
+    <span>
+    <button onclick="addRunner(); blinkingButton('returnbutton');">Add a Runner</button>
+    <button onclick="deleteSelectedRows()">DNF</button>
+    <button onclick="AddRemaining()" >Add Remaining</button></span></div>
+        <div class="laptimes-content-box">
+        <div >
+            <table id="myTable" class="myTable-box">
+                
+                <thead><tr><td>DNF</td>
+                <td>+Lap</td>
+                <td>Name</td></tr></thead>   
+           <tbody>              
+        </tbody>
+        </table>
+</div>
+        </div>
+        </div>
+    <div class="array-box" hidden>
+        <div id="myTime-box" >
+ </div>
+    </div>
+
+     <div class="timesConfig-box" hidden>
+        <div id="myTime-box2" >
+ </div>
+    </div>
+
+    </div>
+
+<div class="firstPage" hidden >   
+<div class="numLaps-box"># of Laps: <label id="lapsTotal"></label></div>     
+<div class="numAth-box"># of Athletes: <label id="athletesTotal"></label> </div>     
+<div class="ReOrder-box">
+    <button id="Number" class="SortByNumber">Order By Number</button>
+    <button id="Times" class="btnSort">Order By Times</button>
+    <button onclick="goToSetup();">Setup</button>
+</div>
+    <br /><br />
+<div class ="mainTable-box" id="mainTable-box">
+    
+   
+</div>
+
+<div class="stopWatch-box">
+    <form name=clockform><span>
+<input name=starter type=button value="start/pause" onclick="findTIME()" style="width:100px; height:50px;">
+<input name=clock size=12 value="00:00:00.00" style="width:150px; height:50px;">
+<input name=clearer type=button value=" reset " onclick="clearALL()" style="width:100px; height:50px;">
+</span></form>
+</div>
+<div class="dnf-box"><button style="width:100px; height:50px;" onclick="deleteSelectedRows()">DNF</button></div>     
+<div class="remaining-box" ><button id="RemainingButton" style="width:100px; height:50px;" onclick="AddRemaining();">Remaining</button></div>
+</div>
+
+<div class ="mainTest-box" hidden>
+</div>
+
+
+
+
+            </section>
+        </div>
+        <script src="js/jquery-1.9.1.js"></script>
+
+        
+    
+    <script src="js/app/addlap.js"></script>
+    <script src="js/app/addrunner.js"></script>
+    <script src="js/app/stopwatch.js"></script>
+    <link href="css/kendo/2013.1.319/kendo.common.min.css" rel="stylesheet" />
+    <link href="css/kendo/2013.1.319/kendo.default.min.css" rel="stylesheet" />
+    <script src="js/kendo/2013.1.319/kendo.web.min.js"></script>
+    <script src="js/app/viewManager.js"></script>
+    <link href="css/page1.css" rel="stylesheet" />
+    <link href="css/page2.css" rel="stylesheet" />
+    <link href="css/table1.css" rel="stylesheet" />
+    <link href="css/jqueryui.css" rel="stylesheet" />
+    <script src="js/jquery-ui.js"></script>
+    <link href="css/Site.css" rel="stylesheet" />
+    <script src="js/app/SpecialEffects.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>    
+    <script src="js/app/sorttable.js"></script>
+    <script src="js/app/jquery.jsort.0.4.js"></script>
+    <script src="js/app/jquery.jsort.0.4.min.js"></script>
+   
+    
+    </body>
+</html>
